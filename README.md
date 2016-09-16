@@ -1,20 +1,11 @@
-/*
 Twitter Follow-Back Prediction
 
 Tsinghua University - Big Data Summer Camp 2016
-
-Country - India
-
-Name - Prashanth Balasubramanian
 
 Algorithm Used - Random Forest Classifier
 
 Features Used/Model Performance/Sample Input/Output - **SEE BELOW**
 
-*/
-
-
-/*
 
 INSTRUCTIONS TO EXECUTE 
 
@@ -25,10 +16,7 @@ INSTRUCTIONS TO EXECUTE
 
 Note - Make sure that graph_cb.txt and interaction_list_all.txt are copied onto root at HDFS
 
-*/
-
-
-/* FEATURES USED
+FEATURES USED
 
 1. Number of users that are following USER#1 (Popularity metric #1)
 2. Number of users that are following USER#2 (Popularity metric #1)
@@ -44,10 +32,7 @@ Label -> 1.0 if there will be a connection between USER#2 and USER#1, given that
          0.0 otherwise
 
 
-*/
-
-
-/* FINAL INPUT WITH 9 FEATURES - SAMPLE
+FINAL INPUT WITH 9 FEATURES - SAMPLE
 
 (1.0,[3.0,6.0,5.0,6.0,3.0,1.0,0.0,1.0,200.0])
 (1.0,[3.0,2.0,5.0,3.0,3.0,1.0,0.0,0.0,200.0])
@@ -61,12 +46,9 @@ Label -> 1.0 if there will be a connection between USER#2 and USER#1, given that
 (1.0,[1.0,2.0,8.0,7.0,1.0,19.0,1.0,1.0,200.0])
 .
 .
-.
-
-*/
 
 
-/* MODEL PERFORMANCE
+ MODEL PERFORMANCE
 
 testErr: Double = 1.0
 
@@ -120,11 +102,8 @@ auROC: Double = 1.0
 scala> println("Area under ROC = " + auROC)
 Area under ROC = 1.0
 
-*/
 
-
-
-/* RANDOM FOREST WITH 9 TREES
+ RANDOM FOREST WITH 9 TREES
 
 .
 .
